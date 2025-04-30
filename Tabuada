@@ -1,0 +1,5 @@
+for(int contador = 0; contador <= 10; contador++)
+{
+    int resultado = 56 * contador;
+    Console.WriteLine("56 x " + contador + " = " + resultado);
+}
