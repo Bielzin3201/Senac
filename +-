@@ -1,0 +1,13 @@
+decimal N1;
+
+Console.WriteLine("Digite um numero");
+N1 = Convert.ToInt32(Console.ReadLine());
+
+if (N1 >0)
+{
+    Console.WriteLine("seu numero e positivo");
+}
+else
+{
+    Console.WriteLine("seu numero e negativo");
+}
