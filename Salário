@@ -1,0 +1,22 @@
+decimal HorasTrabalhadas, horaAula, desconto, bruto, liquido, resultado;
+
+Console.WriteLine("Digite as horas trabalhadas:");
+HorasTrabalhadas = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("Digite as hora aula:");
+horaAula = Convert.ToDecimal(Console.ReadLine());
+
+bruto = HorasTrabalhadas * horaAula;
+
+Console.WriteLine("O valor do salario bruto é:" + bruto);
+
+Console.WriteLine("Digite o desconto:");
+desconto = Convert.ToDecimal(Console.ReadLine());
+
+desconto = (desconto % bruto) * bruto;
+
+Console.WriteLine("O valor do desconto é:" + desconto);
+
+liquido = bruto - desconto;
+
+Console.WriteLine("O valor do liquido é:" + liquido);
