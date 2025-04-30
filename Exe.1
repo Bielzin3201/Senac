@@ -1,0 +1,53 @@
+int opcao;
+decimal num1, num2, resultado;
+
+Console.WriteLine("Digite o primeiro número:");
+num1 = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("1 - adição:");
+Console.WriteLine("2 - subtração:");
+Console.WriteLine("3 - multiplicação:");
+Console.WriteLine("4 - divisão:");
+
+resultado = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("Digite o segundo número:");
+num2 = Convert.ToDecimal(Console.ReadLine());
+
+switch (resultado)
+{
+    case 1:
+       resultado = num1 + num2;
+        break;
+            
+    case 2:
+        if (num2 < 0)
+        {
+            resultado = num1 + num2;
+            break;
+        }
+        else
+        {
+            resultado = num1 - num2;
+            break;
+        }
+                resultado = num1 - num2;
+        break;
+            
+    case 3:
+              resultado = num1 * num2;
+        break;
+
+    case 4:
+              if (num2 == 0)
+              {
+            Console.WriteLine("Divisão por 0 não e permitida");
+            return;
+              }
+              resultado = num1 / num2;
+             break;
+         default:
+        Console.WriteLine("Operação Inválida");
+        return;
+}
+Console.WriteLine("O seu resultado é: " + resultado);
