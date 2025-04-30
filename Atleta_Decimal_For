@@ -1,0 +1,15 @@
+decimal atletas, maior;
+
+maior = 0;
+for (int contador  = 1; contador < 12; contador++)
+{
+    Console.WriteLine("Digite a altura de atletas " + contador);
+    atletas = Convert.ToDecimal(Console.ReadLine());
+
+    if (atletas > 1.90M)
+    {
+        maior = maior + 1;
+    }
+}
+
+Console.WriteLine("Os atletas que ultrapassam 190 cm são " + maior);
