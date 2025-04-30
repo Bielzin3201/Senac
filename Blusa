@@ -1,0 +1,20 @@
+string blusa;
+
+Console.WriteLine("(Digite o tamanho da blusa (P, M ou G)");
+blusa = Console.ReadLine().ToLower();
+
+switch (blusa)
+{
+    case "p":
+        Console.WriteLine("0.46 * 0.55");
+        break;
+    case "m":
+        Console.WriteLine("0.51 * 0.56");
+        break;
+    case "g":
+        Console.WriteLine("0.52 * 0.58");
+        break;
+        default:
+        Console.WriteLine("Sua blusa não é de nenhum desses tamanhos");
+        break;
+}
