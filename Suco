@@ -1,0 +1,20 @@
+decimal suco, quantidade, suco2;
+
+Console.WriteLine("Digite a quantidade de sucos que deseja");
+quantidade = Convert.ToDecimal(Console.ReadLine());
+
+
+suco = 4.50M;
+suco2 = 5.50M;
+
+
+if (quantidade >=10)
+{
+  suco = 4.50M * quantidade;
+    Console.WriteLine("O preço final da compra é " + suco + ", reais");
+}
+else
+{
+    suco2 = 5.50M * quantidade;
+    Console.WriteLine("o preço total e "+ suco2);
+}
