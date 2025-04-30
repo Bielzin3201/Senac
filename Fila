@@ -1,0 +1,14 @@
+string prioritario;
+
+Console.WriteLine("Você precisa de atendimento prioritário");
+prioritario = Convert.ToString(Console.ReadLine());
+
+if (prioritario == "Sim")
+{
+    Console.WriteLine("Vá para os caixas 1,2,3.");
+
+}
+else
+{
+    Console.WriteLine("Vá para qualquer caixa exceto os 1,2,3.");
+}
