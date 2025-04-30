@@ -1,0 +1,21 @@
+
+int CtBl;
+
+for(int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Digite a quantidade de bolinhas");
+    CtBl = Convert.ToInt32(Console.ReadLine());
+
+    if(CtBl == 82)
+    {
+        Console.WriteLine("Você Acertou");
+    }
+    if(CtBl > 82)
+    {
+        Console.WriteLine("Você errou, tem menos bolinha");
+    }
+    if(CtBl < 82)
+    {
+        Console.WriteLine("Você errou, tem mais bolinha");
+    }
+}
