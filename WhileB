@@ -1,0 +1,11 @@
+int somaValores = 0, valor = -1;
+
+while(valor != 0)
+{
+    Console.Write("Digite um valor ou 0 para sair ");
+    valor = Convert.ToInt32(Console.ReadLine());
+
+    somaValores += valor;
+}
+
+Console.Write("A soma dos valores é " + somaValores );
