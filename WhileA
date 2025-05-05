@@ -1,0 +1,11 @@
+int i = 0, diasNascidos = 0;
+
+while(i < 10)
+{
+    Console.WriteLine("Em quantos dias o bebê nasceu?");
+    diasNascidos = Convert.ToInt32(Console.ReadLine());
+
+    i++;
+}
+
+Console.WriteLine("A média dos dias dos nascidos é: " + (diasNascidos / 10));
