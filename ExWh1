@@ -1,0 +1,18 @@
+int i = 0, num = 0, numNece = 0;
+
+while(num <100)
+{
+    Console.WriteLine("Digite o valor de um número:");
+    num = Convert.ToInt32(Console.ReadLine());
+
+    i++;  
+
+    numNece = numNece + num;
+
+    if(numNece >=100)
+    {
+        Console.WriteLine("A quantidade de números necessários para alcançar 100 ou Mais foi: " + i);
+        break;
+    }
+   
+}
