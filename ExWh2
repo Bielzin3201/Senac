@@ -1,0 +1,35 @@
+string Npiloto, continuar = "s", PilotoR = "", PilotoL = "";
+decimal Vvolta, TempoR = 0, TempoL = 0, somaTempos = 0;
+int QntdPiloto = 0;
+
+while(continuar.ToUpper() == "S")
+{
+    Console.WriteLine("Digite o nome do piloto");
+    Npiloto = Console.ReadLine();
+    Console.WriteLine("Digite a velocidade do piloto");
+    Vvolta = Convert.ToDecimal(Console.ReadLine());
+
+    //Testando o mais lento
+    if(QntdPiloto == 1 || TempoL < Vvolta)
+    {
+        PilotoL = Npiloto;
+        TempoL = Vvolta;
+    }
+
+    if(QntdPiloto == 1 || TempoR > Vvolta)
+    {
+        PilotoR = Npiloto;
+        TempoR = Vvolta;
+    }
+    somaTempos += Vvolta;
+
+    QntdPiloto++;
+
+    Console.WriteLine("Deseja continuar? (S/N)");
+    continuar = Console.ReadLine();
+
+}
+
+Console.WriteLine("O piloto " + PilotoR + " com a velocidade mais rapida foi de: " + TempoR + "Km/h");
+Console.WriteLine("O piloto " + PilotoL + " com a velocidade mais lenta foi de: " + TempoL + "Km/h");
+Console.WriteLine("A media foi: " + (somaTempos / QntdPiloto));
