@@ -1,0 +1,20 @@
+int idade, i = 0, somaIdade = 0, QntdIdadeMaior21 = 0;
+string continuar = "s";
+
+while (continuar.ToLower() == "s")
+{
+    i++;
+    Console.WriteLine("Digite a idade");
+    idade = Convert.ToInt32(Console.ReadLine());
+    somaIdade += idade;
+
+    if (idade >= 21)
+    {
+        QntdIdadeMaior21++;
+    }
+    Console.WriteLine("Deseja continuar (S/N)");
+    continuar = Console.ReadLine();
+}
+Console.WriteLine("Foram digitadas " + i + " idades");
+Console.WriteLine("A média das idades foi: " + somaIdade / i);
+Console.WriteLine(QntdIdadeMaior21 + " pessoas tem mais de 21 anos");
