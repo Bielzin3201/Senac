@@ -1,0 +1,25 @@
+int num, somatorio = 0, menorValorDigi = 0, qntd = 0, qntdPares = 0;
+string continuar = "s";
+
+while(continuar.ToUpper() == "S")
+{
+    Console.WriteLine("Digite um numero");
+    num = Convert.ToInt32(Console.ReadLine());
+
+    somatorio += num;
+    qntd++;
+
+    if(qntd == 1 || num < menorValorDigi)
+    {
+        menorValorDigi = num;
+    }
+    if(num % 2 == 0)
+    {
+        qntdPares++;
+    }
+    Console.WriteLine("Deseja continuat? (S/N)");
+    continuar = Console.ReadLine();
+}
+Console.WriteLine("Somatorio " + somatorio);
+Console.WriteLine("Menor valor: " + menorValorDigi);
+Console.WriteLine("Quantidade de pares: " + qntdPares);
