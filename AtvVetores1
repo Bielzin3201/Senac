@@ -1,0 +1,10 @@
+decimal[] fidelização = new decimal[10];
+int pagamento = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Digite o valor do pagamento " + (i + 1));
+    pagamento = Convert.ToInt32(Console.ReadLine());
+}
+
+Console.WriteLine("Parabéns por completar 10 posições na cartela de Fidelização, como recompensa, o almoço de hoje será por conta da casa");
