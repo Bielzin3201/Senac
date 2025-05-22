@@ -1,0 +1,25 @@
+using System.Runtime.CompilerServices;
+
+decimal[] gols = new decimal[11];
+string[] jogador = new string[11];
+decimal artilheiro = 0;
+string artilheiro2 = "";
+
+for(int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Digite o nome do jogador " + (i + 1));
+    jogador[i] = Convert.ToString(Console.ReadLine());
+
+    Console.WriteLine("Digite a quantidade de gols desse jogador " + (i + 1));
+    gols[i] = Convert.ToDecimal(Console.ReadLine());
+
+    if (gols [i] > artilheiro)
+    {
+        artilheiro = gols[i];
+        artilheiro2 = jogador [i];
+
+    }
+ 
+}
+
+Console.WriteLine($" o jogador com mais gol foi {artilheiro2} com a quantidade de {artilheiro} gols ");
