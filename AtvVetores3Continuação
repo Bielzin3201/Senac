@@ -1,0 +1,19 @@
+string[] nomeJog = new string[11];
+int[] golsJog = new int[11];
+int indice = -1;
+
+for(int i = 0; i < 11; i++)
+{
+    Console.WriteLine("Digite o nome do jogador " + (i + 1) + ":");
+    nomeJog[i] = Console.ReadLine();
+    Console.WriteLine("Digite a quantidade de gols do jogador " + nomeJog[i] + ":");
+    golsJog[i] = Convert.ToInt32(Console.ReadLine());
+}
+for(int i = 0; i < 11;i++)
+{
+    if(i == 0 || golsJog[indice] < golsJog[i])
+    {
+        indice = i;
+    }
+}
+Console.WriteLine("O jogador que fez mais gols foi " + nomeJog[indice] + " com " + golsJog[indice] + " gols.");
